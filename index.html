@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raptor Gym</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="img/logo.png" alt="Logo Raptor Gym" class="logo">
+      </a>
+      <!-- ICONO -->
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class='fa-solid fa-x' id="close-icon"></i>
+      </label>
+
+      <!-- Navbar -->
+      <ul class="navbar-nav">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Rutinas</a></li>
+        <li><a href="#">Calendario</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#" class="btn-contacto">Formulario</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Banner, carrusel -->
+
+  <div class="banner-slider" id="inicio">
+    <div class="slidex active" style="background-image: url('img/carru\ 1.png');"></div>
+    <div class="slidex slide-cal" style="background-image: url('img/carru\ 2.png');">
+      <div class="overlay"></div>
+    </div>
+    <div class="slidex" style="background-image: url('img/carru\ 3.png');"></div>
+  </div>
+  <!-- Rutinas -->
+  <section>
+    <p class="titulos">Rutinas de gimnasio </p>
+    <div class="card">
+      <p style="background-image: url('img/Nivel\ Principiante\ \(0-6\ meses\).png'); background-size: cover;">
+        <span>Nivel Principiante (0-6 meses):</span>
+        <a href="Nivel Principiantes.pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+
+      <p style="background-image: url('img/Nivel\ Intermedio.png'); background-size: cover;">
+        <span>Nivel Intermedio (6 meses - 2 años)</span>
+        <a href="Nivel Intermedio .pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+
+      <p style="background-image: url('img/Nivel\ Avanzado.png'); background-size: cover;">
+        <span>Nivel Avanzado (más de 2 años)</span>
+        <a href="Nivel Avanzado .pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+    </div>
+
+    <p class="titulos">Rutinas de crossfit </p>
+    <div class="card">
+      <p style="background-image: url('img/Nivel\ Principiante\ cros.png'); background-size: cover;">
+        <span>Nivel Principiante</span>
+        <a href="Nivel Principiante CrossFit.pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+
+      <p style="background-image: url('img/Nivel\ Intermedio\ cros.png'); background-size: cover;">
+        <span>Nivel Intermedio</span>
+        <a href="Nivel Intermedio CrossFit.pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+
+      <p style="background-image: url('img/Nivel\ Avanzado\ cros.png'); background-size: cover;">
+        <span>Nivel Avanzado</span>
+        <a href="Nivel Avanzado CrossFit.pdf" target="_blank" class="descarga">Descargar PDF <i
+            class="fa-solid fa-download"></i></a>
+      </p>
+    </div>
+  </section>
+  <!-- calendario -->
+  <section>
+    <p class="titulos">Calendario Semanal de Entrenamiento</p>
+    <div class="calendario">
+      <div class="dia">
+        <h2>Lunes</h2>
+        <div class="tipo">Gimnasio (Pecho + Tríceps)</div>
+        <ul>
+          <li>Press banca - 4x10</li>
+          <li>Fondos - 3x12</li>
+          <li>Aperturas - 3x15</li>
+          <li>Tríceps en polea - 4x12</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Martes</h2>
+        <div class="tipo">Crossfit (Cardio)</div>
+        <ul>
+          <li>Burpees - 20 repeticiones</li>
+          <li>Box jumps - 15 repeticiones</li>
+          <li>Kettlebell swings - 20 repeticiones</li>
+          <li>Correr - 400m x 4 rondas</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Miércoles</h2>
+        <div class="tipo">Gimnasio (Espalda + Bíceps)</div>
+        <ul>
+          <li>Dominadas - 4x8</li>
+          <li>Remo con barra - 4x10</li>
+          <li>Curl bíceps - 3x12</li>
+          <li>Jalones al pecho - 3x15</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Jueves</h2>
+        <div class="tipo">Crossfit (HIIT)</div>
+        <ul>
+          <li>Thrusters - 12 rep/min</li>
+          <li>Saltos dobles - 30 repeticiones</li>
+          <li>Wall balls - 20 repeticiones</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Viernes</h2>
+        <div class="tipo">Gimnasio (Piernas)</div>
+        <ul>
+          <li>Sentadillas - 4x10</li>
+          <li>Prensa - 4x12</li>
+          <li>Peso muerto - 3x8</li>
+          <li>Elevaciones de talón - 3x20</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Sábado</h2>
+        <div class="tipo">Crossfit (Full Body)</div>
+        <ul>
+          <li>Clean & Jerk - 5x5</li>
+          <li>Pull-ups - 4x10</li>
+          <li>Correr - 800m</li>
+          <li>Burpees - 30 repeticiones</li>
+        </ul>
+      </div>
+      <div class="dia">
+        <h2>Domingo</h2>
+        <div class="tipo">Recuperación Activa</div>
+        <ul>
+          <li>Caminata ligera - 30 min</li>
+          <li>Estiramientos - 15 min</li>
+          <li>Yoga - 20 min</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Vida Activa y Saludable -->
+  <section>
+    <p class="titulos">Vida Activa y Saludable</p>
+    <div class="Vida_Activa_y_Saludable">
+      <div class="card_activa card1" style="background-image: url('img/Motivación.png');">
+        <div class="front">Motivación</div>
+        <div class="back">Motivarse para entrenar: Usa metas, variedad y compañía.
+          Hábitos de éxito: Constancia, planificación y descanso.
+          Superar estancamientos: Cambia rutina, mejora técnica, pide ayuda.</div>
+
+      </div>
+
+      <div class="card_activa card2" style="background-image: url('img/Nutrición.png');">
+        <div class="front">Nutrición</div>
+        <div class="back">Alimentos esenciales: Proteínas, carbohidratos, grasas saludables, vegetales y agua para
+          rendir
+          y recuperarse mejor.
+          Nutrición según el tipo de entrenamiento: Fuerza necesita más proteínas; cardio, más carbohidratos.
+          Hidratación: Clave para el rendimiento y la salud. Ajusta la cantidad según peso y actividad.</div>
+      </div>
+
+      <div class="card_activa card3" style="background-image: url('img/Recuperación.png');">
+        <div class="front">Recuperación</div>
+        <div class="back">Descanso: Fundamental para reparar músculos, evitar lesiones y mejorar el sueño.
+          Recuperación activa: Estiramientos, foam rolling y baños de contraste para aliviar dolores y mejorar
+          circulación.
+          Nutrición y suplementos: Proteínas, carbohidratos, vitaminas y suplementos como BCAA’s o magnesio ayudan a una
+          mejor recuperación.</div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonios -->
+  <section class="testimonios"
+    style="background-image: url('img/fondo\ testimonios.png'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 2rem; color: white; text-align: center;">
+    <p class="titulos">Testimonios</p>
+    <div class="contenedor-testimonios">
+      <!-- tarjetas aquí -->
+    </div>
+    <div class="contenedor-testimonios">
+      <div class="tarjeta-testimonio">
+        <img class="slide Testimonios" src="img/textimonio2 (1).jpeg">
+        <h3 class="titulo-tarjeta">Lorem ipsum dolor sit amet</h3>
+        <p class="texto-tarjeta">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <img class="slide Testimonios" src="img/textimonio2 (2).jpeg">
+        <h3 class="titulo-tarjeta">Lorem ipsum dolor sit amet</h3>
+        <p class="texto-tarjeta">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+        </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <img class="slide Testimonios" src="img/tetimonio3.jpeg">
+        <h3 class="titulo-tarjeta">Lorem ipsum dolor sit amet</h3>
+        <p class="texto-tarjeta">
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Formulario -->
+  <section class="contacto">
+    <article>
+      <div class="contenedor-contacto">
+        <div class="izquierda">
+          <h2>¿Listo para una vida activa y saludable?</h2>
+          <p>Empieza en el gym o CrossFit y da el primer paso hacia tu mejor versión.</p>
+          <p>¿Tienes dudas? ¡Escríbenos y te ayudamos!</p>
+        </div>
+        <div class="derecha">
+          <h2>Formulario de contacto</h2>
+          <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- Entrenadores -->
+  <p class="titulos">CONOCE A NUESTROS ENTRENADORES</p>
+  <section class="equipo">
+    <div class="card_entrenadores"
+      style="background-image: url('img/fondo_entrenadores.png'); background-size: cover; background-position: center;">
+      <div class="card_entrenadores">
+        <div class="foto">
+          <img src="img/entrenadora 1.png" alt="">
+        </div>
+        <div class="contenido">
+          <h2>Ana Baker</h2>
+          <p class="titulo">Entrenador personal</p>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. En augue nisl, onare volutpat.
+          </p>
+          <div class="redes">
+            <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook fa-2x"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card_entrenadores"
+      style="background-image: url('img/fondo_entrenadores.png'); background-size: cover; background-position: center;">
+      <div class="card_entrenadores">
+        <div class="foto">
+          <img src="img/entrenador 2.png" alt="">
+        </div>
+        <div class="contenido">
+          <h2>Ana Baker</h2>
+          <p class="titulo">Entrenador personal</p>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. En augue nisl, onare volutpat.
+          </p>
+                    <div class="redes">
+            <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook fa-2x"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card_entrenadores"
+      style="background-image: url('img/fondo_entrenadores.png'); background-size: cover; background-position: center;">
+      <div class="card_entrenadores">
+        <div class="foto">
+          <img src="img/entrenadora 3.png" alt="">
+        </div>
+        <div class="contenido">
+          <h2>Ana Baker</h2>
+          <p class="titulo">Entrenador personal</p>
+          <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. En augue nisl, onare volutpat.
+          </p>
+          <div class="redes">
+            <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook fa-2x"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="boton-vermas">
+    <button>Ver más entrenadores</button>
+  </div>
+  <!-- footer -->
+
+  <section class="seccion-fitness">
+    <div class=" final" style="background-image: url('img/fondo\ footer.png');">
+      <div class="contenido-principal">
+        <h1>Alcanza tus objetivos de fitness</h1>
+        <p>Paquetes de membresía flexibles para adaptarse a todos los niveles de atleta y lograr sus objetivos de
+          acondicionamiento físico.</p>
+      </div>
+      <button class="unete">ÚNETE A NOSOTROS</button>
+    </div>
+    <div class="info-contacto">
+      <div class="columna">
+        <h2>VEN A ENCONTRARNOS</h2>
+        <p>12345 North Main Street, Nueva York, NY</p>
+        <p>555555</p>
+        <p>Teléfono: 1.800.555.6789</p>
+        <p>Correo electrónico: info@su-dominio.com</p>
+      </div>
+      <div class="columna">
+        <h2>HORARIO DE APERTURA</h2>
+        <p>Lunes – Viernes: 09:00 – 19:00</p>
+        <p>Sábado – Domingo: 09:00 – 21:00</p>
+      </div>
+      <div class="columna imagen-lateral">
+        <img src="img/persona corrindo.png" alt="Persona corriendo">
+      </div>
+    </div>
+    <footer>
+      <p>© 2025–2026 • Todos los derechos reservados • Desarrollado por Valeska Porras</p>
+          <div class="redes">
+            <a href="https://facebook.com" target="_blank">
+    <i class="fab fa-facebook fa-2x"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank">
+    <i class="fab fa-instagram fa-2x"></i>
+  </a>
+          </div>
+    </footer>
+  </section>
+
+
+  <script src="js/script.js"></script> <!-- Archivo JS que debe ser completado por la persona competidora -->
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll(".slidex");
+
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
+  </script>
+</body>
+
+</html>
